@@ -1,0 +1,50 @@
+{
+    "dev": {
+        "app_function": "web-api",
+        "aws_region": "ap-southeast-1",
+        "project_name": "syafiq-web-api",
+        "runtime": "python3.9",
+        "aws_environment_variables": { 
+            "STAGE": "dev"
+        },
+        "timeout_seconds": 300,
+        "endpoint_configuration": ["REGIONAL"],
+        "keep_warm": true,
+        "manage_roles":false,
+        "role_name": "web-api",
+        "role_arn": "arn:aws:iam::180432880337:role/syafiq-web",
+        "num_retained_versions": 3
+    },
+    "staging": {
+        "app_function": "web-api",
+        "aws_region": "ap-southeast-1",
+        "project_name": "syafiq-web-api",
+        "runtime": "python3.9",
+        "aws_environment_variables": { 
+            "STAGE": "staging"
+        },
+        "timeout_seconds": 300,
+        "endpoint_configuration": ["REGIONAL"],
+        "keep_warm": true,
+        "manage_roles":false,
+        "role_name": "web-api",
+        "role_arn": "arn:aws:iam::180432880337:role/syafiq-web",
+        "num_retained_versions": 3
+    },
+    "production": {
+        "app_function": "web-api",
+        "aws_region": "ap-southeast-1",
+        "project_name": "syafiq-web-api",
+        "runtime": "python3.9",
+        "aws_environment_variables": { 
+            "STAGE": "production"
+        },
+        "timeout_seconds": 300,
+        "endpoint_configuration": ["REGIONAL"],
+        "keep_warm": true,
+        "manage_roles":false,
+        "role_name": "web-api",
+        "role_arn": "arn:aws:iam::180432880337:role/syafiq-web",
+        "num_retained_versions": 3
+    }
+}
